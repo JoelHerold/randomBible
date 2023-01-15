@@ -45,7 +45,7 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-document.getElementById("outtest").innerText=listBocks[0]+"/"+temp
+document.getElementById("outtest").innerText=listBocks[0][0]+"/"+temp
 
 
 //document.getElementById("out").innerText=listBocks[0]+"/"
