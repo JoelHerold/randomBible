@@ -1,6 +1,6 @@
 const staticDevCoffee = "dev-coffee-site-v1";
 
-const vers =6
+const vers =7
 
 self.addEventListener("install", installEvent => {
   installEvent.waitUntil(
