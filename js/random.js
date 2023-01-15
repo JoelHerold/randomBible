@@ -9,7 +9,7 @@ shuffle(listBocks)
 
 console.log(listBocks)
 
-
+listBocksT=[["1Mose",10],["2Mose",20]]
 
 /**
  * Shuffles array in place.
@@ -26,7 +26,19 @@ function shuffle(a) {
     return a;
 }
 
+shuffle(listBocksT)
 
-listBocks.s
+var temp =getRandomInt(1,listBocksT[0][1])
 
-document.getElementById("out").innerText=listBocks[0]
+console.log(temp)
+
+function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+document.getElementById("outtest").innerText=listBocks[0]+"/"+temp
+
+
+document.getElementById("out").innerText=listBocks[0]+"/"
