@@ -5,6 +5,28 @@ listBocks = ["1Mose","2Mose","3Mose","4Mose","5Mose","Josua","Richter","Ruth","1
     "Römer","1Korinther","2Korinther","Galater","Epheser","Philipper","Kolosser","1Tessalonicher","2Tessalochnicher","1Timotheus","2Timotheus","Titus",
 "Philemon","Hebräer","Jakobus","1Petrus","2Petrus","1Johannes","2Johannes","3Johannes","Judas","Offenbarung"];
 
+shuffle(listBocks)
+
 console.log(listBocks)
 
-document.getElementById("out").innerText=listBocks
+
+
+/**
+ * Shuffles array in place.
+ * @param {Array} a items An array containing the items.
+ */
+function shuffle(a) {
+    var j, x, i;
+    for (i = a.length - 1; i > 0; i--) {
+        j = Math.floor(Math.random() * (i + 1));
+        x = a[i];
+        a[i] = a[j];
+        a[j] = x;
+    }
+    return a;
+}
+
+
+listBocks.s
+
+document.getElementById("out").innerText=listBocks[0]
